@@ -30,6 +30,12 @@ import UIKit
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
     override func draw(_ rect: CGRect) {
+        let rect = CGRect(
+            x: rect.origin.x + (lineWidth/2.0),
+            y: rect.origin.y + (lineWidth/2.0),
+            width: rect.size.width - lineWidth,
+            height: rect.size.height - lineWidth
+        )
         // Drawing code
         let cellSize = CGSize(
             width: rect.size.width / CGFloat(size),
