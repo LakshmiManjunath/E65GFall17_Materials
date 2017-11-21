@@ -1,20 +1,18 @@
 //
-//  FirstViewController.swift
-//  Lecture10
+//  SecondViewController.swift
+//  Lecture11
 //
-//  Created by Van Simmons on 11/13/17.
+//  Created by Van Simmons on 11/20/17.
 //  Copyright © 2017 Harvard University. All rights reserved.
 //
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class SimulationController: UIViewController {
 
-    @IBOutlet weak var scrollView: UIScrollView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        scrollView.contentSize = CGSize(width: 310, height: 1000)
+        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {

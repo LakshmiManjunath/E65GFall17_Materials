@@ -28,7 +28,7 @@ class SecondViewController: UIViewController {
     @IBAction func step(_ sender: UIStepper) {
         let step = sender.value
         var bounds = grayView.bounds
-        bounds.origin.y += CGFloat(step * 10.0)
+        bounds.origin.y = CGFloat(step * 10.0)
         grayView.bounds = bounds
     }
     
